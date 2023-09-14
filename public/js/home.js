@@ -12,14 +12,18 @@ const mostrarPublicaciones = (publicaciones, elementoHtml) => {
     publicaciones.forEach(publicacion => {
         secciones += `
             <section class="d-flex gap-5 border p-3 mb-3">
-            <img src="${publicacion.url_imagen}" class="rounded image-post">
+            <a href="#">
+                <div>
+                    <img src="${publicacion.url_imagen}" class="rounded image-post">
+                </div>
+            </a>
             <div class="d-flex flex-column justify-content-center">
                 <h3 class="mt-3 mb-3">${publicacion.titulo}</h3>
                 <p>${publicacion.descripcion}</p>
                 <p class="mt-3"><b>Fecha:</b> ${publicacion.fecha}</p>
             </div>
             </section>
-        `
+        `;
     })
 
 
