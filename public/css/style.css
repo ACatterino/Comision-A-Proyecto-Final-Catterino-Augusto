@@ -8,3 +8,8 @@ img {
     height: 300px;
     width: 300px;
 }
+
+.nav-logo{
+    height: 50px;
+    width: auto;
+}
