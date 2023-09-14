@@ -11,7 +11,7 @@ const mostrarPublicaciones = (publicaciones, elementoHtml) => {
     // Método para recorrer los registros
     publicaciones.forEach(publicacion => {
         secciones += `
-            <section class="d-flex gap-5 border p-3 mb-3">
+            <section class="d-flex gap-5 border p-3 mb-3 publicaciones">
             <a href="#">
                 <div>
                     <img src="${publicacion.url_imagen}" class="rounded image-post">
